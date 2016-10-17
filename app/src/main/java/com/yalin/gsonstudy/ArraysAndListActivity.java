@@ -56,6 +56,14 @@ public class ArraysAndListActivity extends AppCompatActivity {
         }.getType();
         ArrayList<Founder> founderList = gson.fromJson(founderJson, founderListType);
         Log.d(TAG, "founderList = " + founderList);
+
+        // list as part of an Object
+        String generalInfoJson = "{'name': 'Future Studio Dev Team', 'website': 'https://futurestud.io', 'founders': [{'name': 'Christian', 'flowerCount': 1 }, {'name': 'Marcus','flowerCount': 3 }, {'name': 'Norman','flowerCount': 2 }]}";
+        GeneralInfo generalInfoObject = gson.fromJson(generalInfoJson, GeneralInfo.class);
+        Log.d(TAG, "generalInfoObject = " + generalInfoObject);
+
+        // list nested in list
+        // ...
     }
 
     static class RestaurantWithMenu {
@@ -108,5 +116,18 @@ public class ArraysAndListActivity extends AppCompatActivity {
         }
     }
 
+    static class GeneralInfo {
+        String name;
+        String website;
+        List<Founder> founders;
 
+        @Override
+        public String toString() {
+            return "GeneralInfo{" +
+                    "name='" + name + '\'' +
+                    ", website='" + website + '\'' +
+                    ", founders=" + founders +
+                    '}';
+        }
+    }
 }
