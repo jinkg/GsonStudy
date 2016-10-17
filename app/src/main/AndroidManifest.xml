@@ -21,6 +21,8 @@
         <activity android:name=".NestedObjectsActivity" />
 
         <activity android:name=".ArraysAndListActivity" />
+
+        <activity android:name=".MappingOfMapActivity" />
     </application>
 
 </manifest>

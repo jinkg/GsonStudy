@@ -44,7 +44,8 @@ public class MainActivity extends AppCompatActivity {
         ActionItem[] actionArrays = new ActionItem[]{
                 new ActionItem("BasicUsage", BasicUsageActivity.class),
                 new ActionItem("NestedObjects", NestedObjectsActivity.class),
-                new ActionItem("MappingArrayAndList", ArraysAndListActivity.class)
+                new ActionItem("MappingArrayAndList", ArraysAndListActivity.class),
+                new ActionItem("MappingOfMap", MappingOfMapActivity.class)
         };
         mAdapter.setActions(Arrays.asList(actionArrays));
     }
