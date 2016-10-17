@@ -19,6 +19,8 @@
         <activity android:name=".BasicUsageActivity" />
 
         <activity android:name=".NestedObjectsActivity" />
+
+        <activity android:name=".ArraysAndListActivity" />
     </application>
 
 </manifest>

@@ -43,7 +43,8 @@ public class MainActivity extends AppCompatActivity {
     private void setData() {
         ActionItem[] actionArrays = new ActionItem[]{
                 new ActionItem("BasicUsage", BasicUsageActivity.class),
-                new ActionItem("NestedObjects", NestedObjectsActivity.class)
+                new ActionItem("NestedObjects", NestedObjectsActivity.class),
+                new ActionItem("MappingArrayAndList", ArraysAndListActivity.class)
         };
         mAdapter.setActions(Arrays.asList(actionArrays));
     }

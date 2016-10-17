@@ -5,10 +5,8 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 
 import com.google.gson.Gson;
-import com.yalin.gsonstudy.model.UserSimple;
 
 /**
  * 作者：YaLin
@@ -31,12 +29,33 @@ public class BasicUsageActivity extends AppCompatActivity {
         userSimple.age = 26;
         userSimple.isDeveloper = true;
 
+        // serialization
         Gson gson = new Gson();
         String jsonStr = gson.toJson(userSimple);
         Log.d(TAG, "jsonStr = " + jsonStr);
 
+        // deserialization
         String userJson = "{'age':26,'email':'nilaynij@futurestud.io','isDeveloper':true,'name':'YaLin'}";
         UserSimple userSimple1 = gson.fromJson(userJson, UserSimple.class);
         Log.d(TAG, "userSimple1 = " + userSimple1.toString());
     }
+
+    static class UserSimple {
+        String name;
+        String email;
+        int age;
+        boolean isDeveloper;
+
+        @Override
+        public String toString() {
+            return "UserSimple{" +
+                    "name='" + name + '\'' +
+                    ", email='" + email + '\'' +
+                    ", age=" + age +
+                    ", isDeveloper=" + isDeveloper +
+                    '}';
+        }
+    }
 }
+
+

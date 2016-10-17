@@ -5,12 +5,8 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 
 import com.google.gson.Gson;
-import com.yalin.gsonstudy.model.NestedUserSimple;
-import com.yalin.gsonstudy.model.Restaurant;
-import com.yalin.gsonstudy.model.UserAddress;
 
 /**
  * 作者：YaLin
@@ -40,6 +36,7 @@ public class NestedObjectsActivity extends AppCompatActivity {
         userSimple.isDeveloper = true;
         userSimple.userAddress = userAddress;
 
+        // nested objects serialization
         Gson gson = new Gson();
         String jsonStr = gson.toJson(userSimple);
         Log.d(TAG, "jsonStr = " + jsonStr);
@@ -48,8 +45,92 @@ public class NestedObjectsActivity extends AppCompatActivity {
                 "      'houseNumber': '42A', 'street': 'Main Street'   } },'cook': {  'age': 18,  'name': 'Marcus',   'salary': 1500\n" +
                 "  },'waiter': {'age': 18,'name': 'Norman', 'salary': 1000 }}";
 
+        // nested objects deserialization
         Restaurant restaurant = gson.fromJson(json, Restaurant.class);
         Log.d(TAG, "restaurant = " + restaurant);
 
+    }
+
+    static class NestedUserSimple {
+        String name;
+        String email;
+        int age;
+        boolean isDeveloper;
+
+        UserAddress userAddress;
+
+        @Override
+        public String toString() {
+            return "NestedUserSimple{" +
+                    "name='" + name + '\'' +
+                    ", email='" + email + '\'' +
+                    ", age=" + age +
+                    ", isDeveloper=" + isDeveloper +
+                    ", userAddress=" + userAddress +
+                    '}';
+        }
+    }
+
+    static class UserAddress {
+        String street;
+        String houseNumber;
+        String city;
+        String country;
+
+        @Override
+        public String toString() {
+            return "UserAddress{" +
+                    "street='" + street + '\'' +
+                    ", houseNumber='" + houseNumber + '\'' +
+                    ", city='" + city + '\'' +
+                    ", country='" + country + '\'' +
+                    '}';
+        }
+    }
+
+    static class Restaurant {
+        String name;
+
+        Owner owner;
+        Staff cook;
+        Staff waiter;
+
+        @Override
+        public String toString() {
+            return "Restaurant{" +
+                    "name='" + name + '\'' +
+                    ", owner=" + owner +
+                    ", cook=" + cook +
+                    ", waiter=" + waiter +
+                    '}';
+        }
+    }
+
+    static class Owner {
+        String name;
+        UserAddress address;
+
+        @Override
+        public String toString() {
+            return "Owner{" +
+                    "name='" + name + '\'' +
+                    ", address=" + address +
+                    '}';
+        }
+    }
+
+    static class Staff {
+        String name;
+        int age;
+        int salary;
+
+        @Override
+        public String toString() {
+            return "Staff{" +
+                    "name='" + name + '\'' +
+                    ", age=" + age +
+                    ", salary=" + salary +
+                    '}';
+        }
     }
 }
