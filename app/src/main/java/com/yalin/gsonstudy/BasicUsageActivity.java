@@ -21,19 +21,10 @@ public class BasicUsageActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Button button = new Button(this);
-        button.setText(R.string.click_me_to_start);
-        setContentView(button);
-
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                start();
-            }
-        });
+        setContentView(R.layout.activity_single_button);
     }
 
-    private void start() {
+    public void start(View view) {
         UserSimple userSimple = new UserSimple();
         userSimple.name = "YaLin";
         userSimple.email = "nilaynij@gmail.com";

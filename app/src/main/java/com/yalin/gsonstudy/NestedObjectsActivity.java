@@ -23,19 +23,10 @@ public class NestedObjectsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Button button = new Button(this);
-        button.setText(R.string.click_me_to_start);
-        setContentView(button);
-
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                start();
-            }
-        });
+        setContentView(R.layout.activity_single_button);
     }
 
-    private void start() {
+    public void start(View view) {
         UserAddress userAddress = new UserAddress();
         userAddress.city = "Beijing";
         userAddress.country = "China";

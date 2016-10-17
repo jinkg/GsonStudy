@@ -2,10 +2,9 @@ package com.yalin.gsonstudy;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -60,11 +59,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private class ItemAdapter extends BaseAdapter {
-        private Context mContext;
+        private LayoutInflater mInflater;
         private List<ActionItem> mActions;
 
         ItemAdapter(Context context) {
-            mContext = context;
+            mInflater = LayoutInflater.from(context);
         }
 
         void setActions(List<ActionItem> actionItems) {
@@ -89,13 +88,10 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             if (convertView == null) {
-                convertView = new TextView(mContext);
+                convertView = mInflater.inflate(android.R.layout.simple_list_item_1, parent, false);
             }
-            TextView button = (TextView) convertView;
-            button.setBackgroundColor(Color.WHITE);
-            button.setGravity(Gravity.CENTER);
-            button.setPadding(20, 20, 20, 20);
-            button.setText(getItem(position).title);
+            TextView textView = (TextView) convertView;
+            textView.setText(getItem(position).title);
             return convertView;
         }
     }
