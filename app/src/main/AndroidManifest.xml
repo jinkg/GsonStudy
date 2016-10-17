@@ -27,6 +27,8 @@
         <activity android:name=".MappingOfSetsActivity" />
 
         <activity android:name=".MappingOfNullValueActivity" />
+
+        <activity android:name=".IgnoreFieldActivity" />
     </application>
 
 </manifest>

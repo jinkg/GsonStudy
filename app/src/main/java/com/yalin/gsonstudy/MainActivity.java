@@ -47,7 +47,8 @@ public class MainActivity extends AppCompatActivity {
                 new ActionItem("MappingArrayAndList", ArraysAndListActivity.class),
                 new ActionItem("MappingOfMap", MappingOfMapActivity.class),
                 new ActionItem("MappingOfSets", MappingOfSetsActivity.class),
-                new ActionItem("MappingOfNullValue", MappingOfNullValueActivity.class)
+                new ActionItem("MappingOfNullValue", MappingOfNullValueActivity.class),
+                new ActionItem("IgnoreFiled", IgnoreFieldActivity.class)
 
         };
         mAdapter.setActions(Arrays.asList(actionArrays));
