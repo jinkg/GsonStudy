@@ -25,6 +25,8 @@
         <activity android:name=".MappingOfMapActivity" />
 
         <activity android:name=".MappingOfSetsActivity" />
+
+        <activity android:name=".MappingOfNullValueActivity" />
     </application>
 
 </manifest>
