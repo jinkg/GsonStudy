@@ -7,14 +7,15 @@ import android.util.Log;
 import android.view.View;
 
 import com.google.gson.Gson;
+import com.google.gson.annotations.SerializedName;
 
 /**
  * 作者：YaLin
  * 日期：2016/10/17.
  */
 
-public class BasicUsageActivity extends AppCompatActivity {
-    private static final String TAG = "BasicUsageActivity";
+public class SerializedNameAnnotationActivity extends AppCompatActivity {
+    private static final String TAG = "SerializedName";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -23,39 +24,41 @@ public class BasicUsageActivity extends AppCompatActivity {
     }
 
     public void start(View view) {
-        UserSimple userSimple = new UserSimple();
-        userSimple.name = "YaLin";
-        userSimple.email = "nilaynij@gmail.com";
-        userSimple.age = 26;
-        userSimple.isDeveloper = true;
+        Gson gson = new Gson();
 
         // serialization
-        Gson gson = new Gson();
-        String jsonStr = gson.toJson(userSimple);
-        Log.d(TAG, "jsonStr = " + jsonStr);
+        UserSimple userSimple = new UserSimple("Yalin", "nilaynij@gmail.com", true, 26);
+        String userStr = gson.toJson(userSimple);
+        Log.d(TAG, "userStr = " + userStr);
 
         // deserialization
-        String userJson = "{'age':26,'email':'nilaynij@gmail.com','isDeveloper':true,'name':'YaLin'}";
-        UserSimple userSimple1 = gson.fromJson(userJson, UserSimple.class);
-        Log.d(TAG, "userSimple1 = " + userSimple1.toString());
+        String userJson = "{'age':26,'email':'nilaynij@gmail.com','isDeveloper':true,'fullName':'YaLin'}";
+        UserSimple user = gson.fromJson(userJson, UserSimple.class);
+        Log.d(TAG, "user = " + user);
     }
 
     static class UserSimple {
+        @SerializedName("fullName")
         String name;
         String email;
-        int age;
         boolean isDeveloper;
+        int age;
+
+        UserSimple(String name, String email, boolean isDeveloper, int age) {
+            this.name = name;
+            this.email = email;
+            this.isDeveloper = isDeveloper;
+            this.age = age;
+        }
 
         @Override
         public String toString() {
             return "UserSimple{" +
                     "name='" + name + '\'' +
                     ", email='" + email + '\'' +
-                    ", age=" + age +
                     ", isDeveloper=" + isDeveloper +
+                    ", age=" + age +
                     '}';
         }
     }
 }
-
-

@@ -48,7 +48,8 @@ public class MainActivity extends AppCompatActivity {
                 new ActionItem("MappingOfMap", MappingOfMapActivity.class),
                 new ActionItem("MappingOfSets", MappingOfSetsActivity.class),
                 new ActionItem("MappingOfNullValue", MappingOfNullValueActivity.class),
-                new ActionItem("IgnoreFiled", IgnoreFieldActivity.class)
+                new ActionItem("IgnoreFiled", IgnoreFieldActivity.class),
+                new ActionItem("SerializedNameAnnotation", SerializedNameAnnotationActivity.class)
 
         };
         mAdapter.setActions(Arrays.asList(actionArrays));

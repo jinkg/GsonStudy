@@ -29,6 +29,8 @@
         <activity android:name=".MappingOfNullValueActivity" />
 
         <activity android:name=".IgnoreFieldActivity" />
+
+        <activity android:name=".SerializedNameAnnotationActivity" />
     </application>
 
 </manifest>
