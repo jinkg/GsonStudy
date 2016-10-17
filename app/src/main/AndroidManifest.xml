@@ -31,6 +31,8 @@
         <activity android:name=".IgnoreFieldActivity" />
 
         <activity android:name=".SerializedNameAnnotationActivity" />
+
+        <activity android:name=".GsonBuilderNamingPoliciesActivity" />
     </application>
 
 </manifest>
