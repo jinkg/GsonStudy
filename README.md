@@ -8,7 +8,7 @@
 ### 6 Mapping of Null Values
 ### 7 How to Ignore Fields with @Expose
 ### 8 How to Change the Naming of Fields with @SerializedName
-### ...Waiting to add more advance feature
+### ...Waiting for add more advance feature
 
 ## Feedback
 
