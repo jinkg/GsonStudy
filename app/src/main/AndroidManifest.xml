@@ -37,6 +37,8 @@
         <activity android:name=".ForceSerializationNullValueActivity" />
 
         <activity android:name=".ExclusionStrategiesActivity" />
+
+        <activity android:name=".LenientUsageActivity" />
     </application>
 
 </manifest>
