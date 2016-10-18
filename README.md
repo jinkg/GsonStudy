@@ -13,6 +13,12 @@
 ## Gson Builder
 - 9 Basics & Naming Policies
 - 10 Force Serialization of null Values
+- 11 Exclusion Strategies
+- 12 Relax Gson with Lenient
+- 13 Special Values of Floats & Doubles
+
+## Gson Advanced
+- 14 Mapping of Enums
 
 ## ...Waiting for add more advance feature
 
