@@ -51,7 +51,7 @@ public class MappingOfMapActivity extends AppCompatActivity {
         Log.d(TAG, "amountCurrency = " + amountCurrency);
     }
 
-    static class AmountWithCurrency {
+    private static class AmountWithCurrency {
         String currency;
         int amount;
 

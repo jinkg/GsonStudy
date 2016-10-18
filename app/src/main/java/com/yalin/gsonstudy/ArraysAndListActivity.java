@@ -66,7 +66,7 @@ public class ArraysAndListActivity extends AppCompatActivity {
         // ...
     }
 
-    static class RestaurantWithMenu {
+    private static class RestaurantWithMenu {
         String name;
 
         List<RestaurantMenuItem> menu;
@@ -85,7 +85,7 @@ public class ArraysAndListActivity extends AppCompatActivity {
         }
     }
 
-    static class RestaurantMenuItem {
+    private static class RestaurantMenuItem {
         String description;
         float price;
 
@@ -103,7 +103,7 @@ public class ArraysAndListActivity extends AppCompatActivity {
         }
     }
 
-    static class Founder {
+    private static class Founder {
         String name;
         int flowerCount;
 
@@ -116,7 +116,7 @@ public class ArraysAndListActivity extends AppCompatActivity {
         }
     }
 
-    static class GeneralInfo {
+    private static class GeneralInfo {
         String name;
         String website;
         List<Founder> founders;

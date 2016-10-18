@@ -76,7 +76,7 @@ public class GsonBuilderNamingPoliciesActivity extends AppCompatActivity {
         Log.d(TAG, "postReviewer = " + postReviewer);
     }
 
-    static class UserNaming {
+    private static class UserNaming {
         String Name;
         String email_of_developer;
         boolean isDeveloper;
@@ -93,7 +93,7 @@ public class GsonBuilderNamingPoliciesActivity extends AppCompatActivity {
         }
     }
 
-    static class PostReviewer {
+    private static class PostReviewer {
         String reviewerName;
 
         @Override

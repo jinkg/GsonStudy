@@ -37,7 +37,7 @@ public class SerializedNameAnnotationActivity extends AppCompatActivity {
         Log.d(TAG, "user = " + user);
     }
 
-    static class UserSimple {
+    private static class UserSimple {
         @SerializedName("fullName")
         String name;
         String email;

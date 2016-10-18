@@ -50,7 +50,8 @@ public class MainActivity extends AppCompatActivity {
                 new ActionItem("MappingOfNullValue", MappingOfNullValueActivity.class),
                 new ActionItem("IgnoreFiled", IgnoreFieldActivity.class),
                 new ActionItem("SerializedNameAnnotation", SerializedNameAnnotationActivity.class),
-                new ActionItem("GsonBuilderNamingPolicies", GsonBuilderNamingPoliciesActivity.class)
+                new ActionItem("GsonBuilderNamingPolicies", GsonBuilderNamingPoliciesActivity.class),
+                new ActionItem("ForceSerializationNullValue", ForceSerializationNullValueActivity.class),
 
         };
         mAdapter.setActions(Arrays.asList(actionArrays));

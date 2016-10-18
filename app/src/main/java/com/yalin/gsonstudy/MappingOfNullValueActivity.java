@@ -39,7 +39,7 @@ public class MappingOfNullValueActivity extends AppCompatActivity {
         Log.d(TAG, "user2 = " + user2);
     }
 
-    static class UserSimple {
+    private static class UserSimple {
         String name;
         String email;
         int age;

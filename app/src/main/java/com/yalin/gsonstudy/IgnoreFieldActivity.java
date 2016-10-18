@@ -37,7 +37,7 @@ public class IgnoreFieldActivity extends AppCompatActivity {
         Log.d(TAG, "userSimple1 = " + userSimple1);
     }
 
-    static class UserSimple {
+    private static class UserSimple {
         @Expose()
         String name;
 

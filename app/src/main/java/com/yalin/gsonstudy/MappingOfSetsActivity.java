@@ -47,7 +47,7 @@ public class MappingOfSetsActivity extends AppCompatActivity {
         Log.d(TAG, "founderSet = " + founderSet);
     }
 
-    static class Founder {
+    private static class Founder {
         String name;
         int flowerCount;
 

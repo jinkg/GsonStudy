@@ -33,6 +33,8 @@
         <activity android:name=".SerializedNameAnnotationActivity" />
 
         <activity android:name=".GsonBuilderNamingPoliciesActivity" />
+
+        <activity android:name=".ForceSerializationNullValueActivity" />
     </application>
 
 </manifest>

@@ -51,7 +51,7 @@ public class NestedObjectsActivity extends AppCompatActivity {
 
     }
 
-    static class NestedUserSimple {
+    private static class NestedUserSimple {
         String name;
         String email;
         int age;
@@ -71,7 +71,7 @@ public class NestedObjectsActivity extends AppCompatActivity {
         }
     }
 
-    static class UserAddress {
+    private static class UserAddress {
         String street;
         String houseNumber;
         String city;
@@ -88,7 +88,7 @@ public class NestedObjectsActivity extends AppCompatActivity {
         }
     }
 
-    static class Restaurant {
+    private static class Restaurant {
         String name;
 
         Owner owner;
@@ -106,7 +106,7 @@ public class NestedObjectsActivity extends AppCompatActivity {
         }
     }
 
-    static class Owner {
+    private static class Owner {
         String name;
         UserAddress address;
 
@@ -119,7 +119,7 @@ public class NestedObjectsActivity extends AppCompatActivity {
         }
     }
 
-    static class Staff {
+    private static class Staff {
         String name;
         int age;
         int salary;

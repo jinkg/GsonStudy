@@ -40,7 +40,7 @@ public class BasicUsageActivity extends AppCompatActivity {
         Log.d(TAG, "userSimple1 = " + userSimple1.toString());
     }
 
-    static class UserSimple {
+    private static class UserSimple {
         String name;
         String email;
         int age;
