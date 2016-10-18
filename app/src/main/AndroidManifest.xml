@@ -39,6 +39,8 @@
         <activity android:name=".ExclusionStrategiesActivity" />
 
         <activity android:name=".LenientUsageActivity" />
+
+        <activity android:name=".SpecialValueOfFloatDoubleActivity" />
     </application>
 
 </manifest>
