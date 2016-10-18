@@ -19,6 +19,7 @@
 
 ## Gson Advanced
 - 14 Mapping of Enums
+
 ## ...Waiting for add more advance feature
 
 ## Feedback
