@@ -35,6 +35,8 @@
         <activity android:name=".GsonBuilderNamingPoliciesActivity" />
 
         <activity android:name=".ForceSerializationNullValueActivity" />
+
+        <activity android:name=".ExclusionStrategiesActivity" />
     </application>
 
 </manifest>

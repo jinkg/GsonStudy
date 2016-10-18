@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 new ActionItem("SerializedNameAnnotation", SerializedNameAnnotationActivity.class),
                 new ActionItem("GsonBuilderNamingPolicies", GsonBuilderNamingPoliciesActivity.class),
                 new ActionItem("ForceSerializationNullValue", ForceSerializationNullValueActivity.class),
-
+                new ActionItem("ExclusionStrategies", ExclusionStrategiesActivity.class)
         };
         mAdapter.setActions(Arrays.asList(actionArrays));
     }
