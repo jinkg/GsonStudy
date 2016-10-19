@@ -41,6 +41,8 @@
         <activity android:name=".LenientUsageActivity" />
 
         <activity android:name=".SpecialValueOfFloatDoubleActivity" />
+
+        <activity android:name=".SerializeEnumActivity" />
     </application>
 
 </manifest>

@@ -54,7 +54,8 @@ public class MainActivity extends AppCompatActivity {
                 new ActionItem("ForceSerializationNullValue", ForceSerializationNullValueActivity.class),
                 new ActionItem("ExclusionStrategies", ExclusionStrategiesActivity.class),
                 new ActionItem("LenientUsage", LenientUsageActivity.class),
-                new ActionItem("SpecialValueOfFloatDouble", SpecialValueOfFloatDoubleActivity.class)
+                new ActionItem("SpecialValueOfFloatDouble", SpecialValueOfFloatDoubleActivity.class),
+                new ActionItem("SerializeEnumActivity", SerializeEnumActivity.class)
         };
         mAdapter.setActions(Arrays.asList(actionArrays));
     }
