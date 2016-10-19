@@ -43,6 +43,8 @@
         <activity android:name=".SpecialValueOfFloatDoubleActivity" />
 
         <activity android:name=".SerializeEnumActivity" />
+
+        <activity android:name=".CircularReferencesActivity" />
     </application>
 
 </manifest>

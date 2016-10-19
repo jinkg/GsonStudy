@@ -55,7 +55,8 @@ public class MainActivity extends AppCompatActivity {
                 new ActionItem("ExclusionStrategies", ExclusionStrategiesActivity.class),
                 new ActionItem("LenientUsage", LenientUsageActivity.class),
                 new ActionItem("SpecialValueOfFloatDouble", SpecialValueOfFloatDoubleActivity.class),
-                new ActionItem("SerializeEnumActivity", SerializeEnumActivity.class)
+                new ActionItem("SerializeEnum", SerializeEnumActivity.class),
+                new ActionItem("CircularReferences", CircularReferencesActivity.class)
         };
         mAdapter.setActions(Arrays.asList(actionArrays));
     }
