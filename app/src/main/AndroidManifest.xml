@@ -45,6 +45,8 @@
         <activity android:name=".SerializeEnumActivity" />
 
         <activity android:name=".CircularReferencesActivity" />
+
+        <activity android:name=".GenericsActivity" />
     </application>
 
 </manifest>
