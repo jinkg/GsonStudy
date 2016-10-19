@@ -19,6 +19,7 @@
 
 ## Gson Advanced
 - 14 Mapping of Enums
+- 15 Mapping of Circular References
 
 ## ...Waiting for add more advance feature
 
