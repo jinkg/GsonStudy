@@ -57,7 +57,8 @@ public class MainActivity extends AppCompatActivity {
                 new ActionItem("SpecialValueOfFloatDouble", SpecialValueOfFloatDoubleActivity.class),
                 new ActionItem("SerializeEnum", SerializeEnumActivity.class),
                 new ActionItem("CircularReferences", CircularReferencesActivity.class),
-                new ActionItem("Generics", GenericsActivity.class)
+                new ActionItem("Generics", GenericsActivity.class),
+                new ActionItem("CustomSerializationPart1", CustomSerializationPart1Activity.class)
         };
         mAdapter.setActions(Arrays.asList(actionArrays));
     }

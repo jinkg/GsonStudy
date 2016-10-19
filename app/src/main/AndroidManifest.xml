@@ -47,6 +47,8 @@
         <activity android:name=".CircularReferencesActivity" />
 
         <activity android:name=".GenericsActivity" />
+
+        <activity android:name=".CustomSerializationPart1Activity" />
     </application>
 
 </manifest>
