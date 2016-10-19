@@ -21,6 +21,7 @@
 - 14 Mapping of Enums
 - 15 Mapping of Circular References
 - 16 Generics
+- 17 Custom Serialization for Simplification (Part 1)
 
 ## ...Waiting for add more advance feature
 
