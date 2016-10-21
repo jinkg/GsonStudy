@@ -53,6 +53,8 @@
         <activity android:name=".CustomDeserializationBasicActivity" />
 
         <activity android:name=".CustomInstanceCreatorActivity" />
+
+        <activity android:name=".JsonAdapterAnnotationActivity" />
     </application>
 
 </manifest>

@@ -66,7 +66,7 @@ public class CustomDeserializationBasicActivity extends AppCompatActivity {
         boolean isDeveloper;
         Date registerDate;
 
-        public UserData(String name, String email, int age, boolean isDeveloper, Date registerDate) {
+        UserData(String name, String email, int age, boolean isDeveloper, Date registerDate) {
             this.name = name;
             this.email = email;
             this.age = age;
