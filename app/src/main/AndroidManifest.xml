@@ -49,6 +49,8 @@
         <activity android:name=".GenericsActivity" />
 
         <activity android:name=".CustomSerializationPart1Activity" />
+
+        <activity android:name=".CustomDeserializationBasicActivity" />
     </application>
 
 </manifest>
