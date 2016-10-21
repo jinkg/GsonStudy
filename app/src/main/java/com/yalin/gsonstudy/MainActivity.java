@@ -42,24 +42,25 @@ public class MainActivity extends AppCompatActivity {
 
     private void setData() {
         ActionItem[] actionArrays = new ActionItem[]{
-                new ActionItem("BasicUsage", BasicUsageActivity.class),
-                new ActionItem("NestedObjects", NestedObjectsActivity.class),
-                new ActionItem("MappingArrayAndList", ArraysAndListActivity.class),
-                new ActionItem("MappingOfMap", MappingOfMapActivity.class),
-                new ActionItem("MappingOfSets", MappingOfSetsActivity.class),
-                new ActionItem("MappingOfNullValue", MappingOfNullValueActivity.class),
-                new ActionItem("IgnoreFiled", IgnoreFieldActivity.class),
-                new ActionItem("SerializedNameAnnotation", SerializedNameAnnotationActivity.class),
-                new ActionItem("GsonBuilderNamingPolicies", GsonBuilderNamingPoliciesActivity.class),
-                new ActionItem("ForceSerializationNullValue", ForceSerializationNullValueActivity.class),
-                new ActionItem("ExclusionStrategies", ExclusionStrategiesActivity.class),
-                new ActionItem("LenientUsage", LenientUsageActivity.class),
-                new ActionItem("SpecialValueOfFloatDouble", SpecialValueOfFloatDoubleActivity.class),
-                new ActionItem("SerializeEnum", SerializeEnumActivity.class),
-                new ActionItem("CircularReferences", CircularReferencesActivity.class),
-                new ActionItem("Generics", GenericsActivity.class),
-                new ActionItem("CustomSerializationPart1", CustomSerializationPart1Activity.class),
-                new ActionItem("CustomDeserializationBasic", CustomDeserializationBasicActivity.class)
+                new ActionItem("1.BasicUsage", BasicUsageActivity.class),
+                new ActionItem("2.NestedObjects", NestedObjectsActivity.class),
+                new ActionItem("3.MappingArrayAndList", ArraysAndListActivity.class),
+                new ActionItem("4.MappingOfMap", MappingOfMapActivity.class),
+                new ActionItem("5.MappingOfSets", MappingOfSetsActivity.class),
+                new ActionItem("6.MappingOfNullValue", MappingOfNullValueActivity.class),
+                new ActionItem("7.IgnoreFiled", IgnoreFieldActivity.class),
+                new ActionItem("8.SerializedNameAnnotation", SerializedNameAnnotationActivity.class),
+                new ActionItem("9.GsonBuilderNamingPolicies", GsonBuilderNamingPoliciesActivity.class),
+                new ActionItem("10.ForceSerializationNullValue", ForceSerializationNullValueActivity.class),
+                new ActionItem("11.ExclusionStrategies", ExclusionStrategiesActivity.class),
+                new ActionItem("12.LenientUsage", LenientUsageActivity.class),
+                new ActionItem("13.SpecialValueOfFloatDouble", SpecialValueOfFloatDoubleActivity.class),
+                new ActionItem("14.SerializeEnum", SerializeEnumActivity.class),
+                new ActionItem("15.CircularReferences", CircularReferencesActivity.class),
+                new ActionItem("16.Generics", GenericsActivity.class),
+                new ActionItem("17.CustomSerializationPart1", CustomSerializationPart1Activity.class),
+                new ActionItem("18.CustomDeserializationBasic", CustomDeserializationBasicActivity.class),
+                new ActionItem("19.CustomInstanceCreator", CustomInstanceCreatorActivity.class)
         };
         mAdapter.setActions(Arrays.asList(actionArrays));
     }

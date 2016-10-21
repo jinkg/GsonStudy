@@ -51,6 +51,8 @@
         <activity android:name=".CustomSerializationPart1Activity" />
 
         <activity android:name=".CustomDeserializationBasicActivity" />
+
+        <activity android:name=".CustomInstanceCreatorActivity" />
     </application>
 
 </manifest>
