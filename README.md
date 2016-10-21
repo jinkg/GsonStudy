@@ -22,6 +22,9 @@
 - 15 Mapping of Circular References
 - 16 Generics
 - 17 Custom Serialization for Simplification (Part 1)
+- 18 Custom Deserialization Basics
+- 19 Custom Instance Creator
+- 20 Customizing (De)Serialization and Adding Instance Creators via @JsonAdapter
 
 ## ...Waiting for add more advance feature
 
