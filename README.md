@@ -25,6 +25,7 @@
 - 18 Custom Deserialization Basics
 - 19 Custom Instance Creator
 - 20 Customizing (De)Serialization via @JsonAdapter
+- 21 How to Deserialize a List of Polymorphic Objects
 
 ## ...Waiting for add more advance feature
 
