@@ -61,7 +61,8 @@ public class MainActivity extends AppCompatActivity {
                 new ActionItem("17.CustomSerializationPart1", CustomSerializationPart1Activity.class),
                 new ActionItem("18.CustomDeserializationBasic", CustomDeserializationBasicActivity.class),
                 new ActionItem("19.CustomInstanceCreator", CustomInstanceCreatorActivity.class),
-                new ActionItem("20.JsonAdapterAnnotation", JsonAdapterAnnotationActivity.class)
+                new ActionItem("20.JsonAdapterAnnotation", JsonAdapterAnnotationActivity.class),
+                new ActionItem("21.DeserializeOfPolymorphic", DeserializeOfPolymorphicActivity.class)
         };
         mAdapter.setActions(Arrays.asList(actionArrays));
     }

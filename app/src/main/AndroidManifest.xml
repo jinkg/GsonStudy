@@ -55,6 +55,8 @@
         <activity android:name=".CustomInstanceCreatorActivity" />
 
         <activity android:name=".JsonAdapterAnnotationActivity" />
+
+        <activity android:name=".DeserializeOfPolymorphicActivity" />
     </application>
 
 </manifest>
